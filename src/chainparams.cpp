@@ -86,12 +86,12 @@ public:
 		genesis.nNonce = 340111;
 
 		hashGenesisBlock = genesis.GetHash();
-  
+/*  
         LogPrintf("Display genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
 	    LogPrintf("Display merkle root so we can input it below %s\n", genesis.hashMerkleRoot.ToString().c_str());
         LogPrintf("Display nonce so we can input it below %s\n", genesis.nNonce);
         LogPrintf("Display time so we can input it below %s\n", genesis.nTime);
-
+*/
 		assert(genesis.hashMerkleRoot == uint256("0xb8ba5a6357f4601eea10412a2a3343aa6227a88f8ab7ea7c20ecea26590f2316"));
 		assert(hashGenesisBlock == uint256("0x7f7cf987368ae1c00f93894e6bc887b8082d115509ad81f66d9355dfe0d1a2ec"));
 
@@ -157,7 +157,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        LogPrintf("Display testNet genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
+//        LogPrintf("Display testNet genesis hash so we can input it below %s\n", hashGenesisBlock.ToString().c_str());
 
 		assert(hashGenesisBlock == uint256("0x3b2c66d1e740ebe1ca48e423fab04cf02e1f67265747d51d1f96504867164eb0"));
 
